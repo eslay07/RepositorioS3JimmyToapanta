@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana2JimmyToapanta.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="SISTEMAS DE CAPACITACIONES" 
+                HorizontalOptions="CenterAndExpand" FontSize="Medium" BackgroundColor="Azure" />
+
+            <Label Text="Informacion del Estudiante" FontSize="Medium" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+
+                    <RowDefinition>
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition>
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtApellido" Placeholder="Apellido" Grid.Row="0" Grid.Column="1"/>
+                <Entry x:Name="txtCarrera" Placeholder="Carrera" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtIdentificacion" Placeholder="Identificacion" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="PARCIAL 1" FontSize="Medium" Grid.Row="2" Grid.Column="0" />
+                <Entry x:Name="txtSeguimiento1" Placeholder="Nota de Seguimiento 1" Keyboard="Numeric" Grid.Row="3" Grid.Column="0" TextChanged="txtSeguimiento1_TextChanged" />
+                <Entry x:Name="txtNexamen1" Placeholder="Examen 1" Keyboard="Numeric" Grid.Row="3" Grid.Column="1" TextChanged="txtNexamen1_TextChanged" />
+                <Button x:Name="btnParciaL1" Text="Ver Nota P1" Grid.Row="4" Grid.Column="0" Clicked="btnParciaL1_Clicked"/>
+                <Label x:Name="notaP1"   FontSize="Title" Grid.Row="4" Grid.Column="1"  />
+                <Label Text="PARCIAL 2" FontSize="Medium" Grid.Row="5" Grid.Column="0"/>
+                <Entry x:Name="txtSeguimiento2" Placeholder="Nota de Seguimiento 2" Keyboard="Numeric" Grid.Row="6" Grid.Column="0" TextChanged="txtSeguimiento2_TextChanged"/>
+                <Entry x:Name="txtNexamen2"  Placeholder="Examen 2" Keyboard="Numeric" Grid.Row="6" Grid.Column="1" TextChanged="txtNexamen2_TextChanged" />
+
+                <Button x:Name="btnParciaL2" Text="Ver Nota P2" Clicked="btnParciaL2_Clicked" Grid.Row="7" Grid.Column="0" />
+                <Label x:Name="notaP2" FontSize="Title" Grid.Row="7" Grid.Column="1"/>
+            </Grid>
+            <Button x:Name="btnInformacion" Text="Mostrar Informacion" Clicked="btnInformacion_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
